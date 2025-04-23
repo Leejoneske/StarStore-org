@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Error | StarStore</title>
+    <link href="/css/main.css" rel="stylesheet">
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-code {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #ef4444;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">500</div>
+        <div class="error-message" data-translate="500message">Internal server error</div>
+        <p data-translate="500description">We're working on fixing this. Please try again later.</p>
+        <a href="/" class="buy-button px-6 py-3 mt-4" data-translate="returnHome">Return to Home</a>
+    </div>
+    <script src="/js/modules/i18n.js"></script>
+</body>
+</html>
