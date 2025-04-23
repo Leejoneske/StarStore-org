@@ -1,1 +1,39 @@
 
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | StarStore</title>
+    <link href="/css/main.css" rel="stylesheet">
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-code {
+            font-size: 5rem;
+            font-weight: bold;
+            color: #4f46e5;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message" data-translate="404message">Page not found</div>
+        <a href="/" class="buy-button px-6 py-3" data-translate="returnHome">Return to Home</a>
+    </div>
+    <script src="/js/modules/i18n.js"></script>
+</body>
+</html>
